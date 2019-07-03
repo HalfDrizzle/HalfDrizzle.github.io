@@ -94,13 +94,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="HalfRain&#39;s space">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Unity面试题:一:：什么是协同程序?在主线程运行时同时开启另一段逻辑处理，来协助当前程序的执行，协程很像多线程但不是多线程，Unity的协程在每帧结束之后去检测yield的条件是否满足 二：ArrayList与List的主要区别？​    ArrayList存在不安全类型（ArrayList会把所有插入其中的数据都当作Object来处理）装箱拆箱的操作（费时）。List是接口，Array是实现">
+<meta name="keywords" content="Unity,C#,Interview">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Interview-Unity">
+<meta property="og:url" content="http://yoursite.com/2019/07/03/Interview-Unity/index.html">
 <meta property="og:site_name" content="HalfRain&#39;s space">
+<meta property="og:description" content="Unity面试题:一:：什么是协同程序?在主线程运行时同时开启另一段逻辑处理，来协助当前程序的执行，协程很像多线程但不是多线程，Unity的协程在每帧结束之后去检测yield的条件是否满足 二：ArrayList与List的主要区别？​    ArrayList存在不安全类型（ArrayList会把所有插入其中的数据都当作Object来处理）装箱拆箱的操作（费时）。List是接口，Array是实现">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-03T07:56:35.729Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HalfRain&#39;s space">
+<meta name="twitter:title" content="Interview-Unity">
+<meta name="twitter:description" content="Unity面试题:一:：什么是协同程序?在主线程运行时同时开启另一段逻辑处理，来协助当前程序的执行，协程很像多线程但不是多线程，Unity的协程在每帧结束之后去检测yield的条件是否满足 二：ArrayList与List的主要区别？​    ArrayList存在不安全类型（ArrayList会把所有插入其中的数据都当作Object来处理）装箱拆箱的操作（费时）。List是接口，Array是实现">
 
 
 
@@ -108,7 +113,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/03/Interview-Unity/">
 
 
 
@@ -118,7 +123,7 @@
   };
 </script>
 
-  <title>HalfRain's space</title>
+  <title>Interview-Unity | HalfRain's space</title>
   
 
 
@@ -166,8 +171,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -205,7 +209,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -265,241 +269,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/03/NetworkBase/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="HalfRain">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HalfRain's space">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/03/NetworkBase/" class="post-title-link" itemprop="url">NetworkBase</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-07-03 15:55:11 / Modified: 17:09:11" itemprop="dateCreated datePublished" datetime="2019-07-03T15:55:11+08:00">2019-07-03</time>
-            </span>
-          
-
-          
-            
-
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Technology/" itemprop="url" rel="index"><span itemprop="name">Technology</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="网络基础："><a href="#网络基础：" class="headerlink" title="网络基础："></a>网络基础：</h1><p><img src="G:%5CBlog%5Csource_posts%5C70" alt="è¿éåå¾çæè¿°"></p>
-<h3 id="一：TCP的连接与断开"><a href="#一：TCP的连接与断开" class="headerlink" title="一：TCP的连接与断开"></a>一：TCP的连接与断开</h3><ol>
-<li><p>连接前准备</p>
-<p>服务端：分配文件描述符 -&gt;绑定-&gt;监听-&gt;阻塞等待客户端连接。</p>
-<p>客户端：分配文件描述符-&gt;发起连接请求-&gt;阻塞等待服务器应答。</p>
-</li>
-<li><p>三次握手</p>
-<p>第一次握手：主机A发送同步报文段（SYN Synchronize Sequence Number）请求建立连接</p>
-<p>第二次握手：主机B听到连接请求，就将该连接放入内核等待队列中，并向主机A发送针对SYN的确认ACK（Acknowledgement 确认字符），同时主机B也发送自己的请求建立连接（SYN）</p>
-<p>第三次握手：主机A针对主机B的SYN确认应答ACK</p>
-</li>
-<li><p>四次挥手</p>
-<p>第一次挥手：当主机A发送数据完毕后，发送FIN结束报文段。</p>
-<p>第二次挥手：主机B收到FIN报文段后，向主机发送一个ACK（为了防止在这段时间内对方重传FIN报文段）。</p>
-<p>第三次挥手：主机B准备关闭连接，向主机A发送一个FIN结束报文段</p>
-<p>第四次挥手：主机A收到FIN结束报文段后，进入TIME_WAIT状态。并向主机B发送一个ACK表示连接彻底释放。</p>
-</li>
-</ol>
-<h3 id="二：面试细节"><a href="#二：面试细节" class="headerlink" title="二：面试细节"></a>二：面试细节</h3><ol>
-<li><p>为什么是三次握手？</p>
-<p>如果是两次：</p>
-<ol>
-<li>当客户端发出的一个请求报文段没有丢失，而是滞留在了某个网络节点，过了好长时间才发送到服务端，此时服务端建立连接。但因为现在客户端没有发出连接请求，因此不会理睬服务端的确认，而服务端以为新的连接产生，服务端资源就被浪费了。</li>
-<li>当确认应答ACK总是丢失时，客户端以为服务端没有连接，它讲会不断地重新请求连接，而服务端会连接大量的无效连接，给服务端增加维护成本，服务器很容易收到SYN洪水攻击</li>
-</ol>
-<p>如果是三次：</p>
-<ol>
-<li>就算客户端发送的ACK丢失，也不影响服务端，客户端不断重发总会连接成功。三次握手相当于将安全问题抛给了客户端，对服务端影响很小。</li>
-</ol>
-<p>如果是四次：</p>
-<ol>
-<li>3次已经很好的解决了，没有必要4次，况且4次也会造成2次握手的问题</li>
-</ol>
-</li>
-<li><p>为什么是四次挥手？</p>
-<p>TCP是面向连接的，属于全双工，断开连接是双方的事情。所以是四次。当客户端发送FIN结束报文段时，服务端并不会立即关闭SOCKET，所以只能先发送一个ACK。因为由可能此时服务端还没有发送完报文。</p>
-</li>
-<li><p>什么是TIME_WAIT状态？</p>
-<ol>
-<li>主动断开连接的一方，会进入TIME_WAIT状态，并没有直接CLOSE。</li>
-<li>进入TIME_WAIT状态的一方会等待2倍MSL(Maximum Segment Lifetime 报文最大生存时间)的时间。</li>
-</ol>
-</li>
-<li><p>为什么客户端在TIME_WAIT状态必须等待2MSL时间？</p>
-<p>重发可能丢失的ACK报文。因为客户端在收到服务端真正的关闭连接请求后，会进入TIME_WAIT状态，等待2MSL时间，相当于一个报文一来一回的时间，也就是说，如果客户端的确认应答丢失，算上这个丢失报文的时间，再加上服务端重传FIN的时间（重传后客户端重新启动2MSL计时器），2MSL的时间足够使客户端收到重传的FIN报文段。所以客户端不能立即进入CLOSE状态。</p>
-</li>
-</ol>
-<h3 id="三：TCP可靠性机制"><a href="#三：TCP可靠性机制" class="headerlink" title="三：TCP可靠性机制"></a>三：TCP可靠性机制</h3><ol>
-<li><p>检验和</p>
-<p>典型的有CRC校验法。在要传输的k bit数据D后添加（n-k）bit冗余位。</p>
-</li>
-<li><p>序列号：</p>
-<p>通过序列号，可以去重、超时重传、数据有序到达。</p>
-</li>
-<li><p>确认应答</p>
-<p>可以确认ACK之前的数据肯定到达了，保证了可靠性。</p>
-</li>
-<li><p>超时重传</p>
-<p>发送的数据有可能因为网络拥堵，没有及时到达，发送端没有收到确认，就会进行重发。</p>
-<p>接收端有可能收到许多重复文件，通过序列号可以去重。</p>
-<p>累计到一定次数，TCP认为网络或者接收端出现异常，强制关闭连接。</p>
-</li>
-<li><p>连接管理</p>
-<p>通过三次握手四次挥手，也可提高稳定性。</p>
-</li>
-<li><p>流量控制</p>
-<p>接受端处理数据的速度是有限的，如果发送端发的太快，接收端缓冲区容易满，会造成丢包以及引起丢包重传。</p>
-<ol>
-<li>接收端将自己可以接收的缓冲区大小放入报头</li>
-</ol>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -531,10 +303,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/07/03/Interview-Unity/" class="post-title-link" itemprop="url">Interview-Unity</a>
+          <h1 class="post-title" itemprop="name headline">Interview-Unity
+
               
             
           </h1>
@@ -616,9 +386,7 @@
       
 
       
-        
-          
-            <h1 id="Unity面试题"><a href="#Unity面试题" class="headerlink" title="Unity面试题:"></a>Unity面试题:</h1><h3 id="一-：什么是协同程序"><a href="#一-：什么是协同程序" class="headerlink" title="一:：什么是协同程序?"></a>一:：什么是协同程序?</h3><p>在主线程运行时同时开启另一段逻辑处理，来协助当前程序的执行，协程很像多线程但不是多线程，Unity的协程在每帧结束之后去检测yield的条件是否满足</p>
+        <h1 id="Unity面试题"><a href="#Unity面试题" class="headerlink" title="Unity面试题:"></a>Unity面试题:</h1><h3 id="一-：什么是协同程序"><a href="#一-：什么是协同程序" class="headerlink" title="一:：什么是协同程序?"></a>一:：什么是协同程序?</h3><p>在主线程运行时同时开启另一段逻辑处理，来协助当前程序的执行，协程很像多线程但不是多线程，Unity的协程在每帧结束之后去检测yield的条件是否满足</p>
 <h3 id="二：ArrayList与List的主要区别？"><a href="#二：ArrayList与List的主要区别？" class="headerlink" title="二：ArrayList与List的主要区别？"></a>二：ArrayList与List的主要区别？</h3><p>​    ArrayList存在不安全类型（ArrayList会把所有插入其中的数据都当作Object来处理）装箱拆箱的操作（费时）。List是接口，Array是实现了一个实现了该接口的类，可以被实例化。</p>
 <h3 id="三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用"><a href="#三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用" class="headerlink" title="三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用"></a>三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用</h3><p>​    sealed修饰的类为密封类，类声明时可以防止其他类继承该类，在方法中声明则可防止派生类重写此方法。</p>
 <h3 id="四：Unity生命周期："><a href="#四：Unity生命周期：" class="headerlink" title="四：Unity生命周期："></a>四：Unity生命周期：</h3><p>Awake -&gt; OnEnable -&gt; Start -&gt;Update -&gt; FixedUpdate -&gt; LateUpdate -&gt; OnGUI -&gt; OnDisable -&gt; OnDestory</p>
@@ -627,8 +395,6 @@
 <h3 id="七：MipMap是什么，作用？"><a href="#七：MipMap是什么，作用？" class="headerlink" title="七：MipMap是什么，作用？"></a>七：MipMap是什么，作用？</h3><p>​    MipMapping:在三维计算机图形的贴图渲染中常用的技术，为加快渲染进度和减少图像锯齿，贴图被处理成由一系列预先计算和优化过的图片组成的技术，这样的贴图叫做MipMap</p>
 <h3 id="八：Interface和抽象类之间的不同"><a href="#八：Interface和抽象类之间的不同" class="headerlink" title="八：Interface和抽象类之间的不同"></a>八：Interface和抽象类之间的不同</h3><p>​    抽象类表示该类中可能已有一些方法的具体定义，但接口就是公共只能定义各个方法的界面，不能具体地实现代码在成员方法中。类是子类用来继承的，当父类已经有实际功能的方法时该方法在子类中可以不必实现，直接引用父类的方法，子类也可以重写该父类方法。实现接口的时候必须要实现接口中所有的方法，不要遗漏。</p>
 
-          
-        
       
     </div>
 
@@ -649,175 +415,47 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/30/FirstHexoBlog/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="HalfRain">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HalfRain's space">
-    </span>
-
-    
-      <header class="post-header">
-
         
+          
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/06/30/FirstHexoBlog/" class="post-title-link" itemprop="url">First Hexo Blog</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
+        <div class="post-tags">
           
+            <a href="/tags/Unity/" rel="tag"># Unity</a>
           
+            <a href="/tags/C/" rel="tag"># C#</a>
           
-
+            <a href="/tags/Interview/" rel="tag"># Interview</a>
           
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-06-30 12:54:04 / Modified: 14:30:34" itemprop="dateCreated datePublished" datetime="2019-06-30T12:54:04+08:00">2019-06-30</time>
-            </span>
-          
-
-          
-            
-
-            
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Learn/" itemprop="url" rel="index"><span itemprop="name">Learn</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Hello-Hexo-World"><a href="#Hello-Hexo-World" class="headerlink" title="Hello Hexo World"></a>Hello Hexo World</h1><p>完成github部署和域名转发的功能.</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/30/FirstHexoBlog/" rel="next" title="First Hexo Blog">
+                <i class="fa fa-chevron-left"></i> First Hexo Blog
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/03/NetworkBase/" rel="prev" title="NetworkBase">
+                NetworkBase <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -827,14 +465,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -854,8 +493,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -943,6 +591,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Unity面试题"><span class="nav-number">1.</span> <span class="nav-text">Unity面试题:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-：什么是协同程序"><span class="nav-number">1.0.1.</span> <span class="nav-text">一:：什么是协同程序?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二：ArrayList与List的主要区别？"><span class="nav-number">1.0.2.</span> <span class="nav-text">二：ArrayList与List的主要区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用"><span class="nav-number">1.0.3.</span> <span class="nav-text">三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四：Unity生命周期："><span class="nav-number">1.0.4.</span> <span class="nav-text">四：Unity生命周期：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五：物理函数一般放在FixedUpdate里"><span class="nav-number">1.0.5.</span> <span class="nav-text">五：物理函数一般放在FixedUpdate里</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六：LOD是什么，优缺点又是什么？"><span class="nav-number">1.0.6.</span> <span class="nav-text">六：LOD是什么，优缺点又是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七：MipMap是什么，作用？"><span class="nav-number">1.0.7.</span> <span class="nav-text">七：MipMap是什么，作用？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八：Interface和抽象类之间的不同"><span class="nav-number">1.0.8.</span> <span class="nav-text">八：Interface和抽象类之间的不同</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1069,6 +734,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
 
   
 
@@ -1084,6 +753,8 @@
 
   
 
+
+  
 
 
   
