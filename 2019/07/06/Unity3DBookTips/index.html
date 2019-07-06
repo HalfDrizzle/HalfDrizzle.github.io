@@ -94,18 +94,20 @@
 
 
 
-  <meta name="description" content="Unity面试题:一:：什么是协同程序?在主线程运行时同时开启另一段逻辑处理，来协助当前程序的执行，协程很像多线程但不是多线程，Unity的协程在每帧结束之后去检测yield的条件是否满足 二：ArrayList与List的主要区别？​    ArrayList存在不安全类型（ArrayList会把所有插入其中的数据都当作Object来处理）装箱拆箱的操作（费时）。List是接口，Array是实现">
-<meta name="keywords" content="Unity,C#,Interview">
+  <meta name="description" content="Unity3D游戏开发笔记第四章: 游戏脚本4.2.5 使用GUI显示FPS Time.deltaTime: The completion time in seconds since the last frame(Read Only)  Time.timeScale The scale at the time is pass.(游戏内时间/实际时间 = timeScale)  12//计算每次">
+<meta name="keywords" content="Unity">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Interview-Unity">
-<meta property="og:url" content="http://yoursite.com/2019/07/03/Interview-Unity/index.html">
+<meta property="og:title" content="Unity3DBookTips">
+<meta property="og:url" content="http://yoursite.com/2019/07/06/Unity3DBookTips/index.html">
 <meta property="og:site_name" content="HalfRain&#39;s space">
-<meta property="og:description" content="Unity面试题:一:：什么是协同程序?在主线程运行时同时开启另一段逻辑处理，来协助当前程序的执行，协程很像多线程但不是多线程，Unity的协程在每帧结束之后去检测yield的条件是否满足 二：ArrayList与List的主要区别？​    ArrayList存在不安全类型（ArrayList会把所有插入其中的数据都当作Object来处理）装箱拆箱的操作（费时）。List是接口，Array是实现">
+<meta property="og:description" content="Unity3D游戏开发笔记第四章: 游戏脚本4.2.5 使用GUI显示FPS Time.deltaTime: The completion time in seconds since the last frame(Read Only)  Time.timeScale The scale at the time is pass.(游戏内时间/实际时间 = timeScale)  12//计算每次">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-03T09:11:35.363Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/06/Unity3DBookTips/Star.jpg">
+<meta property="og:updated_time" content="2019-07-06T14:54:47.581Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Interview-Unity">
-<meta name="twitter:description" content="Unity面试题:一:：什么是协同程序?在主线程运行时同时开启另一段逻辑处理，来协助当前程序的执行，协程很像多线程但不是多线程，Unity的协程在每帧结束之后去检测yield的条件是否满足 二：ArrayList与List的主要区别？​    ArrayList存在不安全类型（ArrayList会把所有插入其中的数据都当作Object来处理）装箱拆箱的操作（费时）。List是接口，Array是实现">
+<meta name="twitter:title" content="Unity3DBookTips">
+<meta name="twitter:description" content="Unity3D游戏开发笔记第四章: 游戏脚本4.2.5 使用GUI显示FPS Time.deltaTime: The completion time in seconds since the last frame(Read Only)  Time.timeScale The scale at the time is pass.(游戏内时间/实际时间 = timeScale)  12//计算每次">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/06/Unity3DBookTips/Star.jpg">
 
 
 
@@ -113,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/07/03/Interview-Unity/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/06/Unity3DBookTips/">
 
 
 
@@ -123,7 +125,7 @@
   };
 </script>
 
-  <title>Interview-Unity | HalfRain's space</title>
+  <title>Unity3DBookTips | HalfRain's space</title>
   
 
 
@@ -286,7 +288,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/03/Interview-Unity/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/06/Unity3DBookTips/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HalfRain">
@@ -303,7 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Interview-Unity
+          <h1 class="post-title" itemprop="name headline">Unity3DBookTips
 
               
             
@@ -329,7 +331,7 @@
                 
               
 
-              <time title="Created: 2019-07-03 15:35:21 / Modified: 17:11:35" itemprop="dateCreated datePublished" datetime="2019-07-03T15:35:21+08:00">2019-07-03</time>
+              <time title="Created: 2019-07-06 19:31:25 / Modified: 22:54:47" itemprop="dateCreated datePublished" datetime="2019-07-06T19:31:25+08:00">2019-07-06</time>
             </span>
           
 
@@ -348,7 +350,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Technology/" itemprop="url" rel="index"><span itemprop="name">Technology</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Techlonogy/" itemprop="url" rel="index"><span itemprop="name">Techlonogy</span></a></span>
 
                 
                 
@@ -386,14 +388,20 @@
       
 
       
-        <h1 id="Unity面试题"><a href="#Unity面试题" class="headerlink" title="Unity面试题:"></a>Unity面试题:</h1><h3 id="一-：什么是协同程序"><a href="#一-：什么是协同程序" class="headerlink" title="一:：什么是协同程序?"></a>一:：什么是协同程序?</h3><p>在主线程运行时同时开启另一段逻辑处理，来协助当前程序的执行，协程很像多线程但不是多线程，Unity的协程在每帧结束之后去检测yield的条件是否满足</p>
-<h3 id="二：ArrayList与List的主要区别？"><a href="#二：ArrayList与List的主要区别？" class="headerlink" title="二：ArrayList与List的主要区别？"></a>二：ArrayList与List的主要区别？</h3><p>​    ArrayList存在不安全类型（ArrayList会把所有插入其中的数据都当作Object来处理）装箱拆箱的操作（费时）。List是接口，Array是实现了一个实现了该接口的类，可以被实例化。</p>
-<h3 id="三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用"><a href="#三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用" class="headerlink" title="三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用"></a>三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用</h3><p>​    sealed修饰的类为密封类，类声明时可以防止其他类继承该类，在方法中声明则可防止派生类重写此方法。</p>
-<h3 id="四：Unity生命周期："><a href="#四：Unity生命周期：" class="headerlink" title="四：Unity生命周期："></a>四：Unity生命周期：</h3><p>Awake -&gt; OnEnable -&gt; Start -&gt;Update -&gt; FixedUpdate -&gt; LateUpdate -&gt; OnGUI -&gt; OnDisable -&gt; OnDestory</p>
-<h3 id="五：物理函数一般放在FixedUpdate里"><a href="#五：物理函数一般放在FixedUpdate里" class="headerlink" title="五：物理函数一般放在FixedUpdate里"></a>五：物理函数一般放在FixedUpdate里</h3><p>​    每固定帧绘制执行一次，和Update不同的时FixedUpdate是渲染帧执行，如果你的渲染效率低下，FixedUpdate调用次数也跟着下降。FixedUpdate比较适用于物理引擎的计算，因为是跟每帧渲染有关。Update就比较适合做控制。</p>
-<h3 id="六：LOD是什么，优缺点又是什么？"><a href="#六：LOD是什么，优缺点又是什么？" class="headerlink" title="六：LOD是什么，优缺点又是什么？"></a>六：LOD是什么，优缺点又是什么？</h3><p>​    LOD(Level of detail)多层次细节。按照模型位置和重要程度决定物体渲染的资源分配，降低非重要物体的面数和细节度，从而获得高效率的渲染运算。缺点是增加内存。</p>
-<h3 id="七：MipMap是什么，作用？"><a href="#七：MipMap是什么，作用？" class="headerlink" title="七：MipMap是什么，作用？"></a>七：MipMap是什么，作用？</h3><p>​    MipMapping:在三维计算机图形的贴图渲染中常用的技术，为加快渲染进度和减少图像锯齿，贴图被处理成由一系列预先计算和优化过的图片组成的技术，这样的贴图叫做MipMap</p>
-<h3 id="八：Interface和抽象类之间的不同"><a href="#八：Interface和抽象类之间的不同" class="headerlink" title="八：Interface和抽象类之间的不同"></a>八：Interface和抽象类之间的不同</h3><p>​    抽象类表示该类中可能已有一些方法的具体定义，但接口就是公共只能定义各个方法的界面，不能具体地实现代码在成员方法中。类是子类用来继承的，当父类已经有实际功能的方法时该方法在子类中可以不必实现，直接引用父类的方法，子类也可以重写该父类方法。实现接口的时候必须要实现接口中所有的方法，不要遗漏。</p>
+        <img src="/2019/07/06/Unity3DBookTips/Star.jpg">
+
+<h1 id="Unity3D游戏开发笔记"><a href="#Unity3D游戏开发笔记" class="headerlink" title="Unity3D游戏开发笔记"></a>Unity3D游戏开发笔记</h1><h3 id="第四章-游戏脚本"><a href="#第四章-游戏脚本" class="headerlink" title="第四章: 游戏脚本"></a>第四章: 游戏脚本</h3><h4 id="4-2-5-使用GUI显示FPS"><a href="#4-2-5-使用GUI显示FPS" class="headerlink" title="4.2.5 使用GUI显示FPS"></a>4.2.5 使用GUI显示FPS</h4><ol>
+<li><p>Time.deltaTime: The completion time in seconds since the last frame(Read Only)</p>
+</li>
+<li><p>Time.timeScale The scale at the time is pass.(游戏内时间/实际时间 = timeScale)</p>
+</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//计算每次更新实际时间</span><br><span class="line">accum += Time.timeScale / Time.deltaTime;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>输出帧数做保留两位小数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.String.Format(&quot;&#123;0:F2&#125; FPS&quot;, fps);</span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ol>
 
       
     </div>
@@ -422,10 +430,6 @@
           
             <a href="/tags/Unity/" rel="tag"># Unity</a>
           
-            <a href="/tags/C/" rel="tag"># C#</a>
-          
-            <a href="/tags/Interview/" rel="tag"># Interview</a>
-          
         </div>
       
 
@@ -437,8 +441,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/06/30/FirstHexoBlog/" rel="next" title="First Hexo Blog">
-                <i class="fa fa-chevron-left"></i> First Hexo Blog
+              <a href="/2019/07/03/NetworkBase/" rel="next" title="NetworkBase">
+                <i class="fa fa-chevron-left"></i> NetworkBase
               </a>
             
           </div>
@@ -446,10 +450,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/03/NetworkBase/" rel="prev" title="NetworkBase">
-                NetworkBase <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -604,7 +604,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Unity面试题"><span class="nav-number">1.</span> <span class="nav-text">Unity面试题:</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一-：什么是协同程序"><span class="nav-number">1.0.1.</span> <span class="nav-text">一:：什么是协同程序?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二：ArrayList与List的主要区别？"><span class="nav-number">1.0.2.</span> <span class="nav-text">二：ArrayList与List的主要区别？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用"><span class="nav-number">1.0.3.</span> <span class="nav-text">三：请简述sealed（seal密闭的过去分词和过去式）关键字用在类声明时与函数声明时的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四：Unity生命周期："><span class="nav-number">1.0.4.</span> <span class="nav-text">四：Unity生命周期：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五：物理函数一般放在FixedUpdate里"><span class="nav-number">1.0.5.</span> <span class="nav-text">五：物理函数一般放在FixedUpdate里</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#六：LOD是什么，优缺点又是什么？"><span class="nav-number">1.0.6.</span> <span class="nav-text">六：LOD是什么，优缺点又是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#七：MipMap是什么，作用？"><span class="nav-number">1.0.7.</span> <span class="nav-text">七：MipMap是什么，作用？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#八：Interface和抽象类之间的不同"><span class="nav-number">1.0.8.</span> <span class="nav-text">八：Interface和抽象类之间的不同</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Unity3D游戏开发笔记"><span class="nav-number">1.</span> <span class="nav-text">Unity3D游戏开发笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第四章-游戏脚本"><span class="nav-number">1.0.1.</span> <span class="nav-text">第四章: 游戏脚本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2-5-使用GUI显示FPS"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">4.2.5 使用GUI显示FPS</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
